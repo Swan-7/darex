@@ -1,0 +1,46 @@
+#logo {
+  width: 100%;
+  height: auto;
+  max-width: 182px;
+  min-width: 110px;
+  margin-left: 10px;
+}
+#logo-box {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.main-nav {
+  max-height: 120px;
+  background-color: #083458;
+  min-height: 80px;
+  box-shadow: 0px 3px 6px rgba(0, 81, 148, 0.45);
+  margin: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  #logo {
+    margin-left: 30px;
+  }
+}
+.nav-item {
+  color: #00afef;
+  cursor: pointer;
+  text-align: center;
+}
+.nav-item:hover {
+  animation: nav-item-hover 0.25s ease-in-out forwards;
+}
+@keyframes nav-item-hover {
+  0% {
+    font-size: 15px;
+  }
+  100% {
+    font-size: 20px;
+  }
+}
+#sign-up-button {
+  border-color: #00afef;
+  color: #00afef;
+  border-width: 1px;
+}
