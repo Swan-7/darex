@@ -14,8 +14,9 @@
   max-height: 120px;
   background-color: #083458;
   min-height: 80px;
-  box-shadow: 0px 3px 6px rgba(0, 81, 148, 0.45);
+  box-shadow: 0px 6px 12px rgba(0, 81, 148, 0.3);
   margin: 0px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -29,18 +30,35 @@
   text-align: center;
 }
 .nav-item:hover {
-  animation: nav-item-hover 0.25s ease-in-out forwards;
+  animation: nav-item-hover 0.3s ease-in-out forwards;
 }
 @keyframes nav-item-hover {
   0% {
-    font-size: 15px;
+    transform: scale(1);
   }
   100% {
-    font-size: 20px;
+    transform: scale(1.2);
   }
 }
 #sign-up-button {
   border-color: #00afef;
   color: #00afef;
   border-width: 1px;
+}
+#sign-up-button:hover {
+  animation: sign-up-button-animate 0.3 ease-in forwards;
+}
+
+@keyframes sign-up-button-animate {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+/* nav-items-menu */
+
+.nav-items-menu {
+  color: #00afef;
 }
